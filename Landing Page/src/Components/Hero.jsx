@@ -6,10 +6,10 @@ export default function Hero() {
     <section className="py-12 px-5 flex flex-col gap-5">
       {/* Heading */}
       <div>
-        <h1 className="text-[40px] font-bold leading-12">
+        <h1 className="text-[40px] font-bold leading-13">
           Teach students worldwide
         </h1>
-        <p className="mt-5">
+        <p className="mt-5 leading-7">
           Amet nunc diam orci duis ut sit diam arcu, nec. Eleifend proin massa
           tincidunt viverra lectus pulvinar. Nunc ipsum est pellentesque turpis
           ultricies.
@@ -28,9 +28,14 @@ export default function Hero() {
       </div>
 
       {/*logos  */}
-      <div className="flex flex-col gap-3 text-[#475569] mt-5">
+      <div className="flex flex-col gap-4 text-[#475569] mt-5">
         <h1 >Trusted by leading companies</h1>
         <img src="/icons.png" alt="" />
+      </div>
+
+      {/* Hero-image */}
+      <div className="mt-10">
+        <img src="/hero-img.png" alt="" />
       </div>
     </section>
   );
