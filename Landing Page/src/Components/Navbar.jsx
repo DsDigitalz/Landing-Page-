@@ -9,26 +9,31 @@ export default function Navbar() {
         <div>
           <img src="/logo.png" alt="" />
         </div>
-        <h1 className="text-[32px] font-semibold">teach</h1>
+        <h1 className="text-[32px] font-bold">teach</h1>
       </div>
 
       {/* hamburger */}
-      <div className="flex flex-col gap-1 lg:hidden">
+      <button className="flex flex-col gap-1 lg:hidden">
         <div className="bg-black p-0.5 w-10 rounded-full"></div>
         <div className="bg-black p-0.5 w-10 rounded-full"></div>
         <div className="bg-black p-0.5 w-10 rounded-full"></div>
-      </div>
+      </button>
 
       {/* Nav menu */}
-      <nav>
-        <ul className="flex gap-20">
-            <li className="font-medium">Products</li>
-            <li className="font-medium">Solutions</li>
-            <li className="font-medium">Pricing</li>
-            <li className="font-medium">Resourcess</li>
-          
+      
+        <ul className="hidden lg:flex lg:gap-20">
+          <li className="font-medium">Products</li>
+          <li className="font-medium">Solutions</li>
+          <li className="font-medium">Pricing</li>
+          <li className="font-medium">Resourcess</li>
         </ul>
-      </nav>
+      
+
+      {/* button */}
+      <div className="hidden lg:flex lg:gap-5">
+        <button className="border-none rounded-lg p-2 px-4">Log In</button>
+        <button className="border rounded-lg p-2 px-4">Sign Up Now</button>
+      </div>
     </header>
   );
 }
