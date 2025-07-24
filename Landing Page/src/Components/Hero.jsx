@@ -1,4 +1,5 @@
 import React from "react";
+import { FaRegCirclePlay } from "react-icons/fa6";
 
 export default function Hero() {
   return (
@@ -16,19 +17,20 @@ export default function Hero() {
       </div>
 
       {/* Button */}
-      <div className="flex gap-10">
+      <div className="flex gap-5">
         <button className="bg-[#EA580C] rounded-lg px-6 py-3 font-medium text-white">
           Sign Up Now
         </button>
-        <button className="bg-[#fff] rounded-lg px-5 py-3 font-medium text-[#2563EB]">
-          <img src="" alt="" />
+        <button className="flex border border-[#2563EB] items-center gap-3 bg-[#fff] rounded-lg px-5 py-3 font-medium text-[#2563EB]">
+          <FaRegCirclePlay />
           View Demo
         </button>
       </div>
 
       {/*logos  */}
-      <div className="text-[#475569]">
+      <div className="flex flex-col gap-3 text-[#475569] mt-5">
         <h1 >Trusted by leading companies</h1>
+        <img src="/icons.png" alt="" />
       </div>
     </section>
   );
