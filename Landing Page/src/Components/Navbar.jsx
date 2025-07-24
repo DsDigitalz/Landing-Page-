@@ -3,7 +3,7 @@ import React from "react";
 export default function Navbar() {
   return (
     // Header
-    <header className="p-3 flex items-center justify-between lg:px-10">
+    <header className="p-3 flex items-center justify-between md:lg:px-7 lg:px-10">
       {/* logo */}
       <div className="flex items-center gap-1">
         <div>
